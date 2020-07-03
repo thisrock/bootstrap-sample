@@ -1,3 +1,6 @@
-export DEPLOYPATH=/home/burakgog/public_html/
-/bin/cp index.html $DEPLOYPATH
-/bin/cp style.css $DEPLOYPATH
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/burakgog/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
